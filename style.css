@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      
+}
+
+:root{
+    font-size: 62.5%;
+    
+    --background-linear:linear-gradient(45deg, #190361, #bb00ff);
+    --white-color: #FFFF; 
+    --black-purple-color: #34355B;
+
+    --font-dancing-script: 'Dancing Script', cursive;
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+  }
+  
+
+body,
+button {
+      font-family: var(--font-dm-sans);
+    }
+
+
+main {
+    background: #ffffff;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+    margin-top: -8rem;
+    text-align: center;
+    
+}
+
+.hide {
+  display: none;
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: #34355b;
+}
+
+
+#fortuneCookie {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/fortuneCookie.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 20px 30px 0px 0px;
+  
+}
+
+#fortuneCookie:hover {
+  cursor: pointer;
+  animation: cookie-shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cookie-shake {
+    0%, 100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+      10%, 30%, 50%, 70%, 90% {
+        transform: translate(-1px, 2px) rotate(1deg);
+      }
+      20%, 40%, 60%, 80% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+}
+
+
+.view-2 h2 {
+    font-size: 2.4rem;
+    font-family: var(--font-dancing-script);
+    font-weight: normal;
+    background-color: #E4EDF1;;
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+    animation-name: toFadeIn;
+    animation-duration: 2s;
+    text-align: center;  
+    padding: 10px; 
+    
+}
+
+
+#crackedCookie {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/openedCookie.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+button {
+  background-color: #ff9500;
+  color: white;
+  font-weight: bold;
+  border-radius: .4rem .4rem .4rem .4rem;
+  cursor: pointer;
+  transition: background .3s;
+  border: 0;
+  padding: 1.6rem;
+}
+
+button:hover {
+  background-color: #d37b01;
+}
+
+
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
